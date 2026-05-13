@@ -98,12 +98,12 @@ library ByteManipulationLibrary {
     }
 
     /**
-    @notice extract a static sized array of static sized data like uint256, address.
+    @notice extract a dynamic length array of fixed sized data like uint256, address.
     @param data abi encoded bytes calldata
     @param position position of the data to be extracted
     @return returns bytes of extracted data.
     **/
-    function getStaticArrayData(
+    function getFixedElementDynamicArrayData(
         bytes calldata data,
         uint256 position
     ) external pure returns (bytes[] memory) {
